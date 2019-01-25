@@ -41,6 +41,11 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 // Explanation: 
 
+/*  nestedFunction is able to acces the variable 'internal' because the scope chain of the closure that myFunction creates when it is invoked allows for nested closures (like the one nestedFunction creates) to see outside of their local scope. nestedFunction has access to variables in 3 places:
+  1. Local/Function scope - variables declared within the function itself
+  2. Block scope - variables declared to any block (curly braces) that nestedFunction is inside of
+  3. Global scope - variables that aren't nested inside any function block
+*/
 
 const external = "I'm outside the function";
 

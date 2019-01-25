@@ -29,14 +29,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+    - The .forEach() method applies a function against every index within an array, where the .map() function does the same but returns the output into a new array, leaving the original array uncanged.
 
 2. What is the difference between a function and a method?
+    - A method is a function that exists within an object literal.
 
 3. What is closure?
+    - A closure is both a function and it's lexical environment inside of that function. Functions that are scoped in this lexical environment have access to functions and variables within it's own scope, variables going up the scope chain, and global variables.
 
 4. Describe the four rules of the 'this' keyword.
+    1. Global/Window Binding - Happens when the "this" keyword is called inside the global scope. The window/DOM is the only context available that "this" is able to see.
+    2. Implicit Binding - Occurs when "this" is used inside the context of an object method when that method is invoked. The context of "this" in implicit binding can be determined by looking to the left of the dot used to invoke that method.
+    3. New Binding - Used with constructor functions, "this" points to the specific instance of the object that has been created (using the "new" keyword) that gets returned by the constructor function.
+    4. Explicit Binding - When properties get passed from one constructor function to another using .call(), .apply(), or .bind() - the "this" keyword is applied to the object that is explicitly called as a method argument.
 
 5. Why do we need super() in an extended class?
+    - The super() keyword is used to call the constructor in order for the 'this' keyword to be used in an extended class, and makes it possible to access functions on 'this' object's parent.
 
 ## Project Set up
 
